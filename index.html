@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/app.css">
+    <title>BlackJack</title>
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="p-8">
+        <!--! Cabecera y btns -->
+        <h1 class="text-5xl font-semibold text-center">BlackJack</h1>
+        <div class="flex justify-center my-8">
+            <button class="bg-white text-gray-900 font-semibold py-1 px-3 mr-4 rounded-lg hover:bg-gray-600 hover:text-white active:bg-white active:text-gray-900" id="reiniciar">Reiniciar</button>
+            <button class="bg-white text-gray-900 font-semibold py-1 px-3 mr-4 rounded-lg hover:bg-gray-600 hover:text-white active:bg-white active:text-gray-900" id="pedir">Pedir carta</button>
+            <button class="bg-white text-gray-900 font-semibold py-1 px-3 mr-4 rounded-lg hover:bg-gray-600 hover:text-white active:bg-white active:text-gray-900" id="detener">Detenerse</button>
+        </div>
+        <!--! //// Cabecera y btns -->
+        <div class="flex flex-row">
+            <!--! Cajas de detalles -->
+            <div class="basis-2/3 ">
+                <h2 class="text-4xl mb-8 text-center">Jugador</h2>
+                <div>
+                    <span class="text-xl font-semibold">Detalles:</span> <br>
+                    <span class="font-semibold">-> Turno: #</span> <span id="turnoJ"></span>  <br>
+                    <span class="font-semibold">-> Puntaje:</span> <span id="puntajeJ"></span>  <br>
+                </div>
+                <hr class="my-8 mx-[60px]">
+                <div class="w-full flex justify-center ">
+                    <div class="flex flex-wrap w-8/12  pr-8" id="cajaJugador">
+                    </div>
+                </div>
+
+                <hr class="my-8 mx-[60px]">
+            </div>
+            <div class="basis-2/3 ">
+                <h2 class="text-4xl mb-8 text-center">Computadora</h2>
+                <div>
+                    <span class="text-xl font-semibold">Detalles:</span> <br>
+                    <span class="font-semibold">-> Turno: #</span> 0 <br>
+                    <span class="font-semibold">-> Puntaje:</span> 0 <br>
+                </div>
+                <hr class="my-8 mx-[60px]">
+                <div class="w-full flex justify-center" >
+                    <div class="flex flex-wrap w-8/12 " id="boxComputadora">
+                    </div>
+                </div>
+                <hr class="my-8 mx-[60px]">
+            </div>
+            <!--! ///// Cajas de detalles -->
+        </div>
+    </div>
+    <script src="./js/undescore-min.js"></script>   
+    <script src="./js/app.js"></script>
+</body>
+</html>
